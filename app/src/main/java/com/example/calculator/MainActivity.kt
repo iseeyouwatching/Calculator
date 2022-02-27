@@ -115,7 +115,6 @@ class MainActivity : AppCompatActivity() {
             var txt = textView2.text
             textView2.setText("-$txt")
         }
-        newOp = false
     }
 
 
