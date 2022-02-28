@@ -38,7 +38,14 @@ class MainActivity : AppCompatActivity() {
             button7.id-> {buttonClick += "7"}
             button8.id-> {buttonClick += "8"}
             button9.id-> {buttonClick += "9"}
-            button0.id-> {buttonClick += "0"}
+            button0.id-> {
+                if (buttonClick.isEmpty()) {
+                    buttonClick += ""
+                }
+                else {
+                    buttonClick += "0"
+                }
+            }
             buttonComma.id-> {
                 if (buttonClick.isEmpty()) {
                     buttonClick += "0."
